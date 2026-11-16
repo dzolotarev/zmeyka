@@ -2,6 +2,8 @@
 
 Змейка на Java 17 + Swing: никаких внешних зависимостей, никакой Maven/Gradle-магии — только `javac`, `jar` и `jpackage`.
 
+[Лицензия — MIT](LICENSE)
+
 ![кадр игры](docs/screenshot.png)
 
 ## Требования
@@ -86,6 +88,7 @@ zmeyka [--wrap] [--cell=N] [--cols=N] [--rows=N] [--speed=MS] [--version] [--hel
 
 ```
 build.sh, package.sh, run.sh, run-tests.sh
+LICENSE
 docs/screenshot.png
 src/main/java/com/dzolotarev/zmeyka/
   Main.java           — точка входа, параметры запуска, --version/--help
@@ -116,4 +119,4 @@ src/test/java/com/dzolotarev/zmeyka/
 
 ## Лицензия
 
-Не указана. Если нужна — скажи, добавлю `LICENSE`.
+MIT — см. [LICENSE](LICENSE). Можно использовать, изменять и распространять, включая коммерческое использование, с сохранением уведомления об авторстве.

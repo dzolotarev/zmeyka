@@ -1,5 +1,7 @@
 package com.dzolotarev.zmeyka;
 
+/* Распространяется по лицензии MIT — см. LICENSE в корне проекта. */
+
 /** Версия выпуска — одна точка для окна, скриптов сборки и релиза. */
 public final class Version {
 
