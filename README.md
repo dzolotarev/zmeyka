@@ -4,7 +4,10 @@
 
 [Лицензия — MIT](LICENSE)
 
-![кадр игры](docs/screenshot.png)
+| Игровой процесс | Стартовый экран |
+|---|---|
+| ![Игровой процесс](docs/screenshot-gameplay.png) | ![Стартовый экран](docs/screenshot-start.png) |
+| Семейный окрас каждые 2 сегмента, вишня перед носом — змейка показывает язык | Легенда фруктов и семьи, счёт и рекорд в HUD |
 
 ## Требования
 
@@ -91,7 +94,7 @@ zmeyka [--wrap] [--cell=N] [--cols=N] [--rows=N] [--speed=MS] [--version] [--hel
 ```
 build.sh, package.sh, run.sh, run-tests.sh
 LICENSE
-docs/screenshot.png
+docs/screenshot-gameplay.png, docs/screenshot-start.png
 src/main/java/com/dzolotarev/zmeyka/
   Main.java           — точка входа, параметры запуска, --version/--help
   Version.java        — версия выпуска
