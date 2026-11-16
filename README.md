@@ -84,6 +84,8 @@ zmeyka [--wrap] [--cell=N] [--cols=N] [--rows=N] [--speed=MS] [--version] [--hel
 
 `package.sh` делает `jpackage --type app-image` с `--add-modules java.base,java.desktop` и `--jlink-options "--strip-debug --no-header-files --no-man-pages --compress=2"`, затем упаковывает каталог в `build/dist/zmeyka-<версия>-linux-x64.tar.gz`. Версия берётся из `Version.NUMBER` — одна точка правки для окна, jar, tar.gz и тега релиза.
 
+Внутрь архива попадает JRE того JDK, из которого взят `jpackage` из `PATH`; релизный архив собран на Temurin: `PATH=/path/to/temurin-17/bin:$PATH ./package.sh` (app-image ~54 МБ, tar.gz ~32 МБ).
+
 ## Структура
 
 ```
@@ -115,7 +117,7 @@ src/test/java/com/dzolotarev/zmeyka/
 
 | Версия | Что внутри | Ассеты |
 | --- | --- | --- |
-| [v1.0](https://github.com/dzolotarev/zmeyka/releases/tag/v1.0) | первый релиз: семейный окрас, яблоки/груши/вишня, всплывающие очки, `--version`/`--help` | [zmeyka-1.0.jar](https://github.com/dzolotarev/zmeyka/releases/download/v1.0/zmeyka-1.0.jar) (31 КБ), [zmeyka-1.0-linux-x64.tar.gz](https://github.com/dzolotarev/zmeyka/releases/download/v1.0/zmeyka-1.0-linux-x64.tar.gz) (36 МБ, ELF + JRE) |
+| [v1.0](https://github.com/dzolotarev/zmeyka/releases/tag/v1.0) | первый релиз: семейный окрас, яблоки/груши/вишня, всплывающие очки, `--version`/`--help` | [zmeyka-1.0.jar](https://github.com/dzolotarev/zmeyka/releases/download/v1.0/zmeyka-1.0.jar) (31 КБ), [zmeyka-1.0-linux-x64.tar.gz](https://github.com/dzolotarev/zmeyka/releases/download/v1.0/zmeyka-1.0-linux-x64.tar.gz) (32 МБ, ELF + JRE на базе Temurin) |
 
 ## Лицензия
 
