@@ -110,9 +110,9 @@ src/test/java/com/dzolotarev/zmeyka/
 
 ## Релизы
 
-| Версия | Что внутри |
-| --- | --- |
-| [v1.0](../../releases/tag/v1.0) | первый релиз: семейный окрас, яблоки/груши/вишня, всплывающие очки, `--version`/`--help`, jar и ELF-дистрибутив |
+| Версия | Что внутри | Ассеты |
+| --- | --- | --- |
+| [v1.0](https://github.com/dzolotarev/zmeyka/releases/tag/v1.0) | первый релиз: семейный окрас, яблоки/груши/вишня, всплывающие очки, `--version`/`--help` | [zmeyka-1.0.jar](https://github.com/dzolotarev/zmeyka/releases/download/v1.0/zmeyka-1.0.jar) (31 КБ), [zmeyka-1.0-linux-x64.tar.gz](https://github.com/dzolotarev/zmeyka/releases/download/v1.0/zmeyka-1.0-linux-x64.tar.gz) (36 МБ, ELF + JRE) |
 
 ## Лицензия
 
